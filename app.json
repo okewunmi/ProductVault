@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "ProductVault",
+    "slug": "product-vault",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": false, "bundleIdentifier": "com.productvault.app" },
+    "android": {
+      "adaptiveIcon": { "backgroundColor": "#6C63FF" },
+      "package": "com.productvault.app",
+      "permissions": ["android.permission.CAMERA", "android.permission.READ_EXTERNAL_STORAGE", "android.permission.VIBRATE"]
+    },
+    "plugins": [
+      "expo-router",
+      ["expo-image-picker", {
+        "photosPermission": "Allow ProductVault to access your photos.",
+        "cameraPermission": "Allow ProductVault to use your camera."
+      }],
+      "expo-notifications"
+    ],
+    "scheme": "product-vault",
+    "experiments": { "typedRoutes": true }
+  }
+}
