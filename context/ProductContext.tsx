@@ -71,7 +71,7 @@ export function ProductProvider({ children }: { children: ReactNode }) {
     // Notify user when limit is reached
     if (state.products.length + 1 === MAX_PRODUCTS) {
       Alert.alert(
-        "🛑 Product Limit Reached",
+        " Product Limit Reached",
         "You've added the maximum of 5 products. Delete one to add more.",
         [{ text: "Got it", style: "default" }]
       );
